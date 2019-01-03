@@ -44,9 +44,12 @@ function update(){
 	for (let r =0 ; r<field.length; r++){
 		let tr = $("#field tr")[r];
 		for(let c=0; c<field[r].length; c++){
-			console.log($(tr).children());
+			//console.log($(tr).children());
 			if (field[r][c]){
-				//console.log($("#field tr")[0]); 
+				$($(tr).children()[c]).addClass("selected"); 
+
+			} else {
+				$($(tr).children()[c]).removeClass("selected"); 
 			}
 		}
 
