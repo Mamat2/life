@@ -15,10 +15,12 @@ function init() {
 	});
 	$ ('#run').click(evt=>{
 		if (intervalId == -1){
-			intervalId=setInterval(()=>{newState(); update()}, 1000);
+			intervalId=setInterval(()=>{newState(); update()}, 500);
+			$ ('#run').text("stop");
 		} else {
 			clearInterval(intervalId);
 			intervalId=-1;
+			$ ('#run').text("run");
 		}
 		
 	});

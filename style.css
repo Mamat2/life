@@ -6,6 +6,8 @@
  	border  :1px black solid;
 	height: 10px;
 	width: 10px ;
+	transition-property: background-color;
+ 	transition-duration: 0.5s;
  }
  td.selected {
  	background-color: black ;
